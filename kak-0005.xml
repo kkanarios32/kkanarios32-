@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2778</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2722</fr:anchor><fr:addr
 type="user">kak-0005</fr:addr><fr:route>kak-0005.xml</fr:route><fr:title
 text="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -22,7 +22,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>428</fr:anchor><fr:addr
 type="user">kak-0009</fr:addr><fr:route>kak-0009.xml</fr:route><fr:title
 text="Contrastive Learning">Contrastive Learning</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Prior to understanding contrastive reinforcement learning, it is important to have an at least rudimentary understanding of contrastive learning. Historically, contrastive learning has been used to learn representations. The fundamental idea behind contrastive learning is to encourage the representations of similar outputs to be similar in representation space.</fr:p><fr:p><fr:strong>Supervised setting:</fr:strong> For now, assume we are in the supervised setting (we have access to lables). Suppose that we are learning a representation in <fr:tex
 display="inline"><![CDATA[\mathbb {R}^d]]></fr:tex>. Our model is a classifier on dogs and cats. If we have two dogs <fr:tex
@@ -69,7 +69,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>439</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
 type="user">kak-000E</fr:addr><fr:route>kak-000E.xml</fr:route><fr:title
 text="NCE loss">NCE loss</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
 type="external"
@@ -97,7 +97,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>440</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:addr
 type="user">kak-000B</fr:addr><fr:route>kak-000B.xml</fr:route><fr:title
 text="InfoNCE">InfoNCE</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
 type="local"
@@ -113,7 +113,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>441</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:addr
 type="user">kak-000C</fr:addr><fr:route>kak-000C.xml</fr:route><fr:title
 text="Maximize Mutual info">Maximize Mutual info</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
 display="inline"><![CDATA[\mathcal {L}_N]]></fr:tex> from <fr:link
@@ -135,8 +135,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:addr
-type="machine">#377</fr:addr><fr:route>unstable-377.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>All we must do is plug <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>432</fr:anchor><fr:addr
+type="machine">#367</fr:addr><fr:route>unstable-367.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>All we must do is plug <fr:tex
 display="inline"><![CDATA[\frac {p(x \mid  c)}{p(x)}]]></fr:tex> back into the objective.
   <fr:tex
 display="block"><![CDATA[\begin {align*}     \mathcal {L}_{\mathbb {N}}^{\text {opt}}&=-\,\mathbb {E}\log \left [\frac {\frac {p(x_{t+k}|c_{t})}{p(x_{t+k})}}{\frac {p(x_{t+k}|c_{t})}{p(x_{t+k})}+\sum _{x_{j}\in  X_{\text {neg}}}\frac {p(x_{j}|c_{t})}{p(x_{j})}}\right ] \\     &=\mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k}|c_{t})}\sum _{x_{j}\in  X_{\text {neg}}}\frac {p(x_{j}|c_{t})}{p(x_{j})}\right ] \\     &\approx \mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k}|c_{t})}(N-1)\,\mathbb {E}\,\frac {p(x_{j}|c_{t})}{p(x_{j})}\right ] \\     &=\mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k} \mid  c_t)}N\right ] \\     &\geq  \mathbb {E} \log  \left [\frac {p(x_{t + k})}{p(x_{t + k} \mid  c_t)}N \right ] \\     &= - I(x_{t + k}, c_t) + \log  N  \end {align*}   ]]></fr:tex>
@@ -158,8 +158,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>443</fr:anchor><fr:addr
-type="machine">#378</fr:addr><fr:route>unstable-378.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>433</fr:anchor><fr:addr
+type="machine">#368</fr:addr><fr:route>unstable-368.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
     We want to maximize
 <fr:tex
 display="block"><![CDATA[     \begin {align*} \mathcal {L}(\theta ) &= \mathbb {E}_{x \sim  p_X, y \sim  p_Y}\Big [\log \sigma (f_{\theta }(x)) + \log (1-\sigma (f_{\theta }(y)))\Big ] \\ &= \int  \log \sigma (f_{\theta }(x)) P_X(x) + \int  \log (1-\sigma (f_{\theta }(y))) P_Y(y) \\ &= \int  \log \sigma (f_{\theta }(z)) P_X(z) + \log (1-\sigma (f_{\theta }(z))) P_Y(z)     \end {align*}     ]]></fr:tex>
@@ -182,8 +182,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:addr
-type="machine">#379</fr:addr><fr:route>unstable-379.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>434</fr:anchor><fr:addr
+type="machine">#369</fr:addr><fr:route>unstable-369.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 The first step is to prove that the average Q-values are close to the task-conditioned Q-values. Below, we will use <fr:tex
 display="inline"><![CDATA[R_{c}(\tau )\triangleq \sum _{\ell =0}^{\infty }\gamma ^{\ell }r_{\ell }(s_{\ell },a_{\ell })]]></fr:tex>:
 
@@ -207,7 +207,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2780</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2724</fr:anchor><fr:addr
 type="user">vandenOord2018</fr:addr><fr:route>vandenOord2018.xml</fr:route><fr:title
 text="Contrastive Predictive Decoding">Contrastive Predictive Decoding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
 name="doi">10.48550/arXiv.1807.03748</fr:meta><fr:meta
@@ -226,7 +226,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2781</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2725</fr:anchor><fr:addr
 type="user">gutmann2012</fr:addr><fr:route>gutmann2012.xml</fr:route><fr:title
 text="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
 name="abstract">We present a new estimation principle for parameterized statistical models. The idea is to perform nonlinear logistic regression to discriminate between the observed data and some artificially generated noise, using the model log-density function in the regression nonlinearity.  We show that this leads to a consistent (convergent) estimator of the parameters, and analyze the asymptotic variance.  In particular, the method is shown to directly work for unnormalized models, i.e. models where the density function does not integrate to one. The normalization constant can be estimated just like any other parameter. For a tractable ICA model, we compare the method with other estimation methods that can be used to learn unnormalized models, including score matching, contrastive divergence, and maximum-likelihood where the normalization constant is estimated with importance sampling. Simulations show that noise-contrastive estimation offers the best trade-off between computational and statistical efficiency. The method is then applied to the modeling of natural images: We show that the method can successfully estimate a large-scale two-layer model and a Markov random field.</fr:meta><fr:meta
@@ -259,7 +259,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2782</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2726</fr:anchor><fr:addr
 type="user">kak-0002</fr:addr><fr:route>kak-0002.xml</fr:route><fr:title
 text="Blog">Blog</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -275,7 +275,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>436</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>426</fr:anchor><fr:addr
 type="user">kak-0005</fr:addr><fr:route>kak-0005.xml</fr:route><fr:title
 text="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -290,7 +290,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>428</fr:anchor><fr:addr
 type="user">kak-0009</fr:addr><fr:route>kak-0009.xml</fr:route><fr:title
 text="Contrastive Learning">Contrastive Learning</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Prior to understanding contrastive reinforcement learning, it is important to have an at least rudimentary understanding of contrastive learning. Historically, contrastive learning has been used to learn representations. The fundamental idea behind contrastive learning is to encourage the representations of similar outputs to be similar in representation space.</fr:p><fr:p><fr:strong>Supervised setting:</fr:strong> For now, assume we are in the supervised setting (we have access to lables). Suppose that we are learning a representation in <fr:tex
 display="inline"><![CDATA[\mathbb {R}^d]]></fr:tex>. Our model is a classifier on dogs and cats. If we have two dogs <fr:tex
@@ -337,7 +337,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>439</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
 type="user">kak-000E</fr:addr><fr:route>kak-000E.xml</fr:route><fr:title
 text="NCE loss">NCE loss</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
 type="external"
@@ -365,7 +365,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>440</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:addr
 type="user">kak-000B</fr:addr><fr:route>kak-000B.xml</fr:route><fr:title
 text="InfoNCE">InfoNCE</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
 type="local"
@@ -381,7 +381,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>441</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:addr
 type="user">kak-000C</fr:addr><fr:route>kak-000C.xml</fr:route><fr:title
 text="Maximize Mutual info">Maximize Mutual info</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
 display="inline"><![CDATA[\mathcal {L}_N]]></fr:tex> from <fr:link
@@ -403,8 +403,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:addr
-type="machine">#377</fr:addr><fr:route>unstable-377.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>All we must do is plug <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>432</fr:anchor><fr:addr
+type="machine">#367</fr:addr><fr:route>unstable-367.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>All we must do is plug <fr:tex
 display="inline"><![CDATA[\frac {p(x \mid  c)}{p(x)}]]></fr:tex> back into the objective.
   <fr:tex
 display="block"><![CDATA[\begin {align*}     \mathcal {L}_{\mathbb {N}}^{\text {opt}}&=-\,\mathbb {E}\log \left [\frac {\frac {p(x_{t+k}|c_{t})}{p(x_{t+k})}}{\frac {p(x_{t+k}|c_{t})}{p(x_{t+k})}+\sum _{x_{j}\in  X_{\text {neg}}}\frac {p(x_{j}|c_{t})}{p(x_{j})}}\right ] \\     &=\mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k}|c_{t})}\sum _{x_{j}\in  X_{\text {neg}}}\frac {p(x_{j}|c_{t})}{p(x_{j})}\right ] \\     &\approx \mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k}|c_{t})}(N-1)\,\mathbb {E}\,\frac {p(x_{j}|c_{t})}{p(x_{j})}\right ] \\     &=\mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k} \mid  c_t)}N\right ] \\     &\geq  \mathbb {E} \log  \left [\frac {p(x_{t + k})}{p(x_{t + k} \mid  c_t)}N \right ] \\     &= - I(x_{t + k}, c_t) + \log  N  \end {align*}   ]]></fr:tex>
@@ -426,8 +426,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>443</fr:anchor><fr:addr
-type="machine">#378</fr:addr><fr:route>unstable-378.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>433</fr:anchor><fr:addr
+type="machine">#368</fr:addr><fr:route>unstable-368.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
     We want to maximize
 <fr:tex
 display="block"><![CDATA[     \begin {align*} \mathcal {L}(\theta ) &= \mathbb {E}_{x \sim  p_X, y \sim  p_Y}\Big [\log \sigma (f_{\theta }(x)) + \log (1-\sigma (f_{\theta }(y)))\Big ] \\ &= \int  \log \sigma (f_{\theta }(x)) P_X(x) + \int  \log (1-\sigma (f_{\theta }(y))) P_Y(y) \\ &= \int  \log \sigma (f_{\theta }(z)) P_X(z) + \log (1-\sigma (f_{\theta }(z))) P_Y(z)     \end {align*}     ]]></fr:tex>
@@ -450,8 +450,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:addr
-type="machine">#379</fr:addr><fr:route>unstable-379.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>434</fr:anchor><fr:addr
+type="machine">#369</fr:addr><fr:route>unstable-369.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 The first step is to prove that the average Q-values are close to the task-conditioned Q-values. Below, we will use <fr:tex
 display="inline"><![CDATA[R_{c}(\tau )\triangleq \sum _{\ell =0}^{\infty }\gamma ^{\ell }r_{\ell }(s_{\ell },a_{\ell })]]></fr:tex>:
 
@@ -468,7 +468,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>445</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>435</fr:anchor><fr:addr
 type="user">kak-005F</fr:addr><fr:route>kak-005F.xml</fr:route><fr:title
 text="Rebuilding My (Neo)Vim Config From Scratch">Rebuilding My (Neo)Vim Config From Scratch</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I have been using LazyVim for some time now, but I have now run into issues multiple times where understanding how LazyVim is doing something is far more difficult than if I had written my own setup. I allocated one day for this adventure and really just wanted to make sure I had support for <fr:tex
 display="inline"><![CDATA[\TeX ]]></fr:tex>, python, forester, and C/C++. Due to my (self-imposed) time constraint, I do not have the associated resources linked for each of the things discussed below. At some point, I hope to come back and more thoroughly cover each of the components.</fr:p>
@@ -480,8 +480,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>419</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>409</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
 text="Sane Defaults">Sane Defaults</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 To my surprise, a lot of the features that I had come to take for granted were actually options set up internally by Lazyvim. For example, I was shocked with 8 space indents!! and I could not even copy from one terminal instance to another... Due to this, I went and found all of the options I liked from Lazyvim and added them to my new configuration in <fr:code>configs/options.lua</fr:code>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -495,8 +495,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>420</fr:anchor><fr:addr
-type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
 text="Installing a Plugin Manager">Installing a Plugin Manager</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 For this, we will be using the defacto standard <fr:code>lazy.nvim</fr:code>. This is actually straightforward and kind of "just works". Just follow the installation guide in their documentation.
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -510,8 +510,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>421</fr:anchor><fr:addr
-type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>411</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:title
 text="Setting up Auto Complete">Setting up Auto Complete</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 This is one of the main motivations for me making the switch. It seems <fr:code>nvim-cmp</fr:code> has finally been replaced with a new <fr:code>blink.cmp</fr:code>, so that is what we will be using.
 
@@ -524,8 +524,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>422</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:title
 text="Language Server Protocol">Language Server Protocol</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 It turns out there is a lot that goes into getting LSP setup correctly.
 <fr:ol><fr:li>First we must actually install the language servers. To do this the easiest way, we use the <fr:code>mason.nvim</fr:code> and <fr:code>mason.nvim-lspconfig</fr:code> plugins. At some point, I might actually figure out how to set up lsp myself without lspconfig but that point is not now.</fr:li>
@@ -543,8 +543,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>423</fr:anchor><fr:addr
-type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>413</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:title
 text="Forester Completion">Forester Completion</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   Another necessary completion source for me is the one provided by <fr:code>forester.nvim</fr:code>. Similar to vimtex, the reference completion support is VERY useful. Obviously, I need completion when I am writing this blog!!! This was a little more involved. The first difficulty was that the completion source provided by the <fr:code>forester.nvim</fr:code> plugin was for <fr:code>nvim-cmp</fr:code>. It turns out this is a prevalent enough problem that the author of <fr:code>blink.cmp</fr:code> wrote an additional plugin <fr:code>blink.compat</fr:code> to allow for <fr:code>nvim-cmp</fr:code> completion sources. While this sounds all fine and good, <fr:code>nvim-compat</fr:code> expects plugins that return the completion source themselves, whereas in <fr:code>forester.nvim</fr:code> the completion source is just one submodule of a more feature-rich plugin. To get around this, I needed to look into the <fr:code>blink.compat</fr:code> code and find how they are registering the sources and just do it myself.
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -560,8 +560,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>424</fr:anchor><fr:addr
-type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>414</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:title
 text="Snippets">Snippets</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>Going all the way back to the <fr:link
 type="external"
@@ -583,8 +583,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>425</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>415</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:title
 text="Treesitter">Treesitter</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
 </fr:mainmatter><fr:backmatter /></fr:tree>
   
@@ -597,8 +597,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>426</fr:anchor><fr:addr
-type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr
+type="machine">#251</fr:addr><fr:route>unstable-251.xml</fr:route><fr:title
 text="Formatters and Linters">Formatters and Linters</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:code>compat.nvim</fr:code>, <fr:code>mason.nvim</fr:code>, black, isort.
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -614,7 +614,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>446</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>436</fr:anchor><fr:addr
 type="user">loading</fr:addr><fr:route>loading.xml</fr:route><fr:title
 text="Coming Soon!!!">Coming Soon!!!</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -627,7 +627,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>448</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:addr
 type="user">kak-005D</fr:addr><fr:route>kak-005D.xml</fr:route><fr:title
 text="Optimization from a Deep Learning Perspective">Optimization from a Deep Learning Perspective</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -640,7 +640,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>450</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>440</fr:anchor><fr:addr
 type="user">kak-004X</fr:addr><fr:route>kak-004X.xml</fr:route><fr:title
 text="A Note on Advantage Estimation">A Note on Advantage Estimation</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -655,8 +655,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>452</fr:anchor><fr:addr
-type="machine">#267</fr:addr><fr:route>unstable-267.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:addr
+type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:title
 text="What is it?">What is it?</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -674,8 +674,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:addr
-type="machine">#268</fr:addr><fr:route>unstable-268.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:addr
+type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:title
 text="Why do we do it?">Why do we do it?</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -693,8 +693,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>456</fr:anchor><fr:addr
-type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>446</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:title
 text="Generalized Advantage Estimation">Generalized Advantage Estimation</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -710,7 +710,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>458</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>448</fr:anchor><fr:addr
 type="user">kak-003Y</fr:addr><fr:route>kak-003Y.xml</fr:route><fr:title
 text="The History and Evolution of Policy Gradient Algorithms">The History and Evolution of Policy Gradient Algorithms</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -741,7 +741,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>460</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>450</fr:anchor><fr:addr
 type="user">kak-003D</fr:addr><fr:route>kak-003D.xml</fr:route><fr:title
 text="Deepseek v1 through R1: RL is back!">Deepseek v1 through R1: RL is back!</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -764,8 +764,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>462</fr:anchor><fr:addr
-type="machine">#302</fr:addr><fr:route>unstable-302.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>452</fr:anchor><fr:addr
+type="machine">#292</fr:addr><fr:route>unstable-292.xml</fr:route><fr:title
 text="Background">Background</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -779,7 +779,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>464</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:addr
 type="user">kak-004J</fr:addr><fr:route>kak-004J.xml</fr:route><fr:title
 text="Word Embeddings">Word Embeddings</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tex
 display="block"><![CDATA[\mathrm {Tok}(\mathbf {x})=\begin {bmatrix} 132\\ 17 \\ 87\\ 83\\ 184\end {bmatrix}]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
@@ -790,7 +790,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>465</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>455</fr:anchor><fr:addr
 type="user">kak-004G</fr:addr><fr:route>kak-004G.xml</fr:route><fr:title
 text="Self-Attention">Self-Attention</fr:title><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>1</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -821,8 +821,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:addr
-type="machine">#274</fr:addr><fr:route>unstable-274.xml</fr:route><fr:taxon>Example</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>1</fr:day></fr:date><fr:authors><fr:author><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>457</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Example</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>2</fr:month><fr:day>1</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
 addr="kellenkanarios"
@@ -856,8 +856,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>469</fr:anchor><fr:addr
-type="machine">#301</fr:addr><fr:route>unstable-301.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>459</fr:anchor><fr:addr
+type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:title
 text="RLHF">RLHF</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -879,8 +879,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>471</fr:anchor><fr:addr
-type="machine">#303</fr:addr><fr:route>unstable-303.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>461</fr:anchor><fr:addr
+type="machine">#293</fr:addr><fr:route>unstable-293.xml</fr:route><fr:title
 text="Deepseek v2">Deepseek v2</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -898,8 +898,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr
-type="machine">#304</fr:addr><fr:route>unstable-304.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>463</fr:anchor><fr:addr
+type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:title
 text="Deepseek v3">Deepseek v3</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -917,8 +917,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>475</fr:anchor><fr:addr
-type="machine">#308</fr:addr><fr:route>unstable-308.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>465</fr:anchor><fr:addr
+type="machine">#298</fr:addr><fr:route>unstable-298.xml</fr:route><fr:title
 text="Deepseek R1">Deepseek R1</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -934,8 +934,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>477</fr:anchor><fr:addr
-type="machine">#305</fr:addr><fr:route>unstable-305.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:addr
+type="machine">#295</fr:addr><fr:route>unstable-295.xml</fr:route><fr:title
 text="How is R1 different then previous iterations of models?">How is R1 different then previous iterations of models?</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -961,7 +961,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>479</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>469</fr:anchor><fr:addr
 type="user">kak-003X</fr:addr><fr:route>kak-003X.xml</fr:route><fr:title
 text="Group Relative Policy Optimization">Group Relative Policy Optimization</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Traditional actor critic RL algorithms, require training both an actor and a critic (as the name implies). Typically, these components are both of equal size. In the field of RL, this is non-problematic because models are typically rather small (at least in comparison to LLMs).
 In <fr:link
@@ -977,8 +977,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:addr
-type="machine">#298</fr:addr><fr:route>unstable-298.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>470</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:title
 text="Math">Math</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:tex
 display="block"><![CDATA[     \begin {align*}     {\mathcal {J}}_{\mathrm {GRPO}}(\theta )&= \mathbb {E}[q\sim  P(Q),\{o_{i}\}_{i=1}^{G}\sim \pi _{\theta _{o l d}}(O|q)] \\     &= \frac {1}{G}\sum _{i=1}^{G}\left (\operatorname *{min}\left (\frac {\pi _{\theta }(o_{i}|q)}{\pi _{\theta _{o d}}(o_{i}|q)}A_{i},\operatorname *{clip}\left (\frac {\pi _{\theta }(o_{i}|q)}{\pi _{\theta _{o d d}}(o_{i}|q)},1-\varepsilon ,1+\varepsilon \right )A_{i}\right )-\beta \mathbb {D}_{K L}\left (\pi _{\theta }||\pi _{r e f}\right )\right )     \end {align*}   ]]></fr:tex>
@@ -1007,8 +1007,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>481</fr:anchor><fr:addr
-type="machine">#306</fr:addr><fr:route>unstable-306.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>471</fr:anchor><fr:addr
+type="machine">#296</fr:addr><fr:route>unstable-296.xml</fr:route><fr:title
 text="Post-training">Post-training</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -1029,8 +1029,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>483</fr:anchor><fr:addr
-type="machine">#307</fr:addr><fr:route>unstable-307.xml</fr:route><fr:title
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr
+type="machine">#297</fr:addr><fr:route>unstable-297.xml</fr:route><fr:title
 text="Distilling Models with R1">Distilling Models with R1</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="kellenkanarios.xml"
@@ -1059,155 +1059,4 @@ repo="kkanarios32/website-comments"
 issue-term="pathname"
 theme="boxy-light"
 crossorigin="anonymous"
-async="" /></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2784</fr:anchor><fr:addr
-type="user">log-0007</fr:addr><fr:route>log-0007.xml</fr:route><fr:title
-text="11/21/2024">11/21/2024</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="kellenkanarios.xml"
-addr="kellenkanarios"
-title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
-name="author">false</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Not a maximally productive day but good progress was made on (almost?) every project.</fr:p>
-  
-    <fr:tree
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2597</fr:anchor><fr:addr
-type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
-text="Daily Summary">Daily Summary</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="kellenkanarios.xml"
-addr="kellenkanarios"
-title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
-  <fr:p><fr:strong>Probability Theory:</fr:strong> I am having a surprisingly good time learning this compared to my experience in undergrad. Today, I finished and thorougly understood the extension of a measure to the <fr:tex
-display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra induced by the outer measure. I left the uniqueness for the next session. I guess the only outstanding question I had was 
-    <fr:ul><fr:li>Why do we need to impose the extra condition that we need the set to satisfy <fr:tex
-display="inline"><![CDATA[P^*(A \cap  E) + P^*(A^c \cap  E) = P^*(E)]]></fr:tex> for every <fr:tex
-display="inline"><![CDATA[E \subset  \Omega ]]></fr:tex> vs. just taking <fr:tex
-display="inline"><![CDATA[E = \Omega ]]></fr:tex>?</fr:li></fr:ul></fr:p>
-
-  <fr:p><fr:strong>Contrastive RL:</fr:strong> Today was big for my understanding along with an interesting new direction.
-    <fr:ul><fr:li>I went over both the original <fr:link
-type="local"
-href="gutmann2012.xml"
-addr="gutmann2012"
-title="Noise-contrastive Estimation">NCE</fr:link> and <fr:link
-type="local"
-href="vandenOord2018.xml"
-addr="vandenOord2018"
-title="Contrastive Predictive Decoding">InfoNCE</fr:link> papers to better understand the non-RL versions.</fr:li>
-      <fr:li>Finally have kind of understood, where the <fr:tex
-display="inline"><![CDATA[Q]]></fr:tex>-function comes from in <fr:link
-type="local"
-href="eysenbach2023.xml"
-addr="eysenbach2023"
-title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link> even though they do not provide proof of the Lemma that claims it.</fr:li>
-      <fr:ul><fr:li>In the <fr:link
-type="local"
-href="gutmann2012.xml"
-addr="gutmann2012"
-title="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:link> paper, they show that their objective will converge to the distribution that generated the data <fr:tex
-display="inline"><![CDATA[p(x)]]></fr:tex>. In <fr:link
-type="local"
-href="eysenbach2023.xml"
-addr="eysenbach2023"
-title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link>, they want to learn the discounted state occupancy measure. To make this their <fr:tex
-display="inline"><![CDATA[p(x)]]></fr:tex>, 
-          <fr:ol><fr:li>they take their "positive" examples as drawn from the state occupancy (turns out to do this is not that hard).</fr:li>
-            <fr:li>they just sample their negative examples uniformly.</fr:li></fr:ol>
-          <fr:li>Need to look a little more at <fr:tex
-display="inline"><![CDATA[Q]]></fr:tex>-function is state discounted probability proof. Why is it not just linearity of expectation / Fubini? Inner series is clearly convergent? Probably related to policy stuff I need to get better at.</fr:li></fr:li></fr:ul>
-        <fr:li>An interesting idea that came up is to apply goal-conditioned RL to safe RL. Namely, we can discourage the visitation of unsafe states by considering <fr:tex
-display="inline"><![CDATA[Q(s, a, \text {unsafe})]]></fr:tex></fr:li>
-        <fr:ul><fr:li>Take <fr:tex
-display="inline"><![CDATA[\pi  \in  \arg \max _{\pi } Q(s, \pi (s), g) - \lambda (\delta ) Q(s, \pi (s), \text {obstacle})]]></fr:tex>, or</fr:li>
-            <fr:li>take <fr:tex
-display="inline"><![CDATA[\pi  \in  \arg \max _{\pi } Q(s, \pi (s), g)]]></fr:tex>, such that <fr:tex
-display="inline"><![CDATA[Q(s, \pi (s), \text {obstacle}) < \epsilon ]]></fr:tex>.</fr:li></fr:ul></fr:ul></fr:p>
-<fr:p><fr:strong>Ghost in the shell:</fr:strong> New ideas have arisen to turn this course project into a research project.
-<fr:ul><fr:li>Professors introduce the concept of "phase detection" from microarchitecture.</fr:li>
-    <fr:li>It seems that this area is concerned with detecting how inputs may influence things like hot paths and detecting when this is going to occur.</fr:li>
-    <fr:li>These methods all seems to choose metrics and algorithms for these metrics arbitrarily.</fr:li>
-    <fr:li>Can we pass a superset of all these metrics to an LLM and have it detect phase changes automatically?</fr:li></fr:ul></fr:p>
-</fr:mainmatter><fr:backmatter /></fr:tree>
-  
-
-  
-    <fr:tree
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2599</fr:anchor><fr:addr
-type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
-text="Tomorrow Todo's">Tomorrow Todo's</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="kellenkanarios.xml"
-addr="kellenkanarios"
-title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
-  <fr:ul><fr:li>I want to start <fr:link
-type="local"
-href="jiang2024.xml"
-addr="jiang2024"
-title="Reinforcement Learning: Theory and Algorithms">Reinforcement Learning: Theory and Algorithms</fr:link> tomorrow, taking a short break from very abstract / rigorous mathematics.</fr:li>
-    <fr:li>Focus tomorrow is getting profiling up and running.</fr:li>
-    <fr:ul><fr:li>By EOD, need to have edges of CFG filled with visitation frequencies.</fr:li></fr:ul>
-    <fr:li>If extra time, finish / work on <fr:link
-type="local"
-href="kak-0005.xml"
-addr="kak-0005"
-title="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:link> blog post with newfound knowledge.</fr:li></fr:ul>
-</fr:mainmatter><fr:backmatter /></fr:tree>
-  
-</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2786</fr:anchor><fr:addr
-type="user">log-0001</fr:addr><fr:route>log-0001.xml</fr:route><fr:title
-text="11/4/2024">11/4/2024</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="kellenkanarios.xml"
-addr="kellenkanarios"
-title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
-name="author">false</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Hello world! This is my first instantiation of this daily logging thing. Here I will attempt to jot down any questions that come up in my research along with planning my daily activities of the next day. To hold my self accountable, I will log my daily accomplishments and questions.</fr:p><fr:p><fr:strong>Daily Summary:</fr:strong> Today, I focused most of my efforts on the <fr:link
-type="local"
-href="kak-0005.xml"
-addr="kak-0005"
-title="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:link> blog. I was not able to finish it, but significant progress was made. I think while writing this blog I am finally starting to see how everything comes together. Ultimately, this was more of a logistical day. Since I just instatiated my more structure daily plan, hopefully we can adhere to it tomorrow.</fr:p><fr:p><fr:strong>Tomorrow Todo's:</fr:strong> With the instantiation of the new plan I will allocate my next day's activities a day in advance.</fr:p><fr:ul><fr:li>We will be starting a self-study following <fr:link
-type="local"
-href="richardsutton.xml"
-addr="richardsutton"
-title="Richard Sutton">Richard Sutton</fr:link>'s <fr:link
-type="external"
-href="https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k?resourcekey=0-JZz-noRuJgogNsg1ljgV8w">CMPUT 609</fr:link> course. For tomorrow, I will go over the review questions and then start with the function approximation section of his textbook.</fr:li>
-  <fr:li>For research, it is long overdue that I contribute to my weak-to-strong generalization project. There are two outstanding objectives:</fr:li>
-  <fr:ul><fr:li>Finite sample analysis,</fr:li>
-    <fr:li>Experiment implementation.</fr:li></fr:ul>
-  I will choose / switch between these.
-  <fr:li>Paper of the week will still be <fr:link
-type="external"
-href="gcrl">gcrl</fr:link>. I will also use this and my extra time to work on the blog post.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+async="" /></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
