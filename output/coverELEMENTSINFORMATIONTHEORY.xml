@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3547</fr:anchor><fr:addr
+type="user">coverELEMENTSINFORMATIONTHEORY</fr:addr><fr:route>coverELEMENTSINFORMATIONTHEORY.xml</fr:route><fr:title
+text="ELEMENTS OF INFORMATION THEORY">ELEMENTS OF INFORMATION THEORY</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author>Thomas M Cover</fr:author><fr:author>Joy A Thomas</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[@article{coverELEMENTSINFORMATIONTHEORY,
+ title = {{{ELEMENTS OF INFORMATION THEORY}}},
+ author = {Cover, Thomas M and Thomas, Joy A},
+ file = {/home/kellen/Zotero/storage/C6AJGW5I/Cover and Thomas - ELEMENTS OF INFORMATION THEORY.pdf},
+ langid = {english}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3516</fr:anchor><fr:addr
+type="user">vandenOord2018</fr:addr><fr:route>vandenOord2018.xml</fr:route><fr:title
+text="Contrastive Predictive Decoding">Contrastive Predictive Decoding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="doi">10.48550/arXiv.1807.03748</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{oord2019representationlearningcontrastivepredictive,
+      title={Representation Learning with Contrastive Predictive Coding}, 
+      author={Aaron van den Oord and Yazhe Li and Oriol Vinyals},
+      year={2019},
+      eprint={1807.03748},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1807.03748}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3517</fr:anchor><fr:addr
+type="user">kak-000B</fr:addr><fr:route>kak-000B.xml</fr:route><fr:title
+text="InfoNCE">InfoNCE</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
+type="local"
+href="vandenOord2018.xml"
+addr="vandenOord2018"
+title="Contrastive Predictive Decoding">InfoNCE</fr:link></fr:em> loss aims to minimize the following information-theoretic objective <fr:tex
+display="block"><![CDATA[\mathcal {L}_{N} = - \mathbb {E}_{\mathcal {X}} \left [\log  \frac {f_k(x_{t + k}, c_t)}{\sum _{x_j \in  \mathcal {X}} f_k(x_j, c_t)}\right ]]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3518</fr:anchor><fr:addr
+type="user">kak-000C</fr:addr><fr:route>kak-000C.xml</fr:route><fr:title
+text="Maximize Mutual info">Maximize Mutual info</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
+display="inline"><![CDATA[\mathcal {L}_N]]></fr:tex> from <fr:link
+type="local"
+href="vandenOord2018.xml"
+addr="vandenOord2018"
+title="Contrastive Predictive Decoding">Contrastive Predictive Decoding</fr:link> maximizes a lower bound on the <fr:link
+type="local"
+href="kak-000V.xml"
+addr="kak-000V"
+title="Mutual Information">Mutual Information</fr:link> between <fr:tex
+display="inline"><![CDATA[x_{t + k}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[c_t]]></fr:tex>.</fr:p>
+   
+   <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>442</fr:anchor><fr:addr
+type="machine">#377</fr:addr><fr:route>unstable-377.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>All we must do is plug <fr:tex
+display="inline"><![CDATA[\frac {p(x \mid  c)}{p(x)}]]></fr:tex> back into the objective.
+  <fr:tex
+display="block"><![CDATA[\begin {align*}     \mathcal {L}_{\mathbb {N}}^{\text {opt}}&=-\,\mathbb {E}\log \left [\frac {\frac {p(x_{t+k}|c_{t})}{p(x_{t+k})}}{\frac {p(x_{t+k}|c_{t})}{p(x_{t+k})}+\sum _{x_{j}\in  X_{\text {neg}}}\frac {p(x_{j}|c_{t})}{p(x_{j})}}\right ] \\     &=\mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k}|c_{t})}\sum _{x_{j}\in  X_{\text {neg}}}\frac {p(x_{j}|c_{t})}{p(x_{j})}\right ] \\     &\approx \mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k}|c_{t})}(N-1)\,\mathbb {E}\,\frac {p(x_{j}|c_{t})}{p(x_{j})}\right ] \\     &=\mathbb {E}\log \left [1+\frac {p(x_{t+k})}{p(x_{t+k} \mid  c_t)}N\right ] \\     &\geq  \mathbb {E} \log  \left [\frac {p(x_{t + k})}{p(x_{t + k} \mid  c_t)}N \right ] \\     &= - I(x_{t + k}, c_t) + \log  N  \end {align*}   ]]></fr:tex>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+ 
+
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3519</fr:anchor><fr:addr
+type="user">log-0007</fr:addr><fr:route>log-0007.xml</fr:route><fr:title
+text="11/21/2024">11/21/2024</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="author">false</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Not a maximally productive day but good progress was made on (almost?) every project.</fr:p>
+  
+    <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2597</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
+text="Daily Summary">Daily Summary</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  <fr:p><fr:strong>Probability Theory:</fr:strong> I am having a surprisingly good time learning this compared to my experience in undergrad. Today, I finished and thorougly understood the extension of a measure to the <fr:tex
+display="inline"><![CDATA[\sigma ]]></fr:tex>-algebra induced by the outer measure. I left the uniqueness for the next session. I guess the only outstanding question I had was 
+    <fr:ul><fr:li>Why do we need to impose the extra condition that we need the set to satisfy <fr:tex
+display="inline"><![CDATA[P^*(A \cap  E) + P^*(A^c \cap  E) = P^*(E)]]></fr:tex> for every <fr:tex
+display="inline"><![CDATA[E \subset  \Omega ]]></fr:tex> vs. just taking <fr:tex
+display="inline"><![CDATA[E = \Omega ]]></fr:tex>?</fr:li></fr:ul></fr:p>
+
+  <fr:p><fr:strong>Contrastive RL:</fr:strong> Today was big for my understanding along with an interesting new direction.
+    <fr:ul><fr:li>I went over both the original <fr:link
+type="local"
+href="gutmann2012.xml"
+addr="gutmann2012"
+title="Noise-contrastive Estimation">NCE</fr:link> and <fr:link
+type="local"
+href="vandenOord2018.xml"
+addr="vandenOord2018"
+title="Contrastive Predictive Decoding">InfoNCE</fr:link> papers to better understand the non-RL versions.</fr:li>
+      <fr:li>Finally have kind of understood, where the <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex>-function comes from in <fr:link
+type="local"
+href="eysenbach2023.xml"
+addr="eysenbach2023"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link> even though they do not provide proof of the Lemma that claims it.</fr:li>
+      <fr:ul><fr:li>In the <fr:link
+type="local"
+href="gutmann2012.xml"
+addr="gutmann2012"
+title="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:link> paper, they show that their objective will converge to the distribution that generated the data <fr:tex
+display="inline"><![CDATA[p(x)]]></fr:tex>. In <fr:link
+type="local"
+href="eysenbach2023.xml"
+addr="eysenbach2023"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link>, they want to learn the discounted state occupancy measure. To make this their <fr:tex
+display="inline"><![CDATA[p(x)]]></fr:tex>, 
+          <fr:ol><fr:li>they take their "positive" examples as drawn from the state occupancy (turns out to do this is not that hard).</fr:li>
+            <fr:li>they just sample their negative examples uniformly.</fr:li></fr:ol>
+          <fr:li>Need to look a little more at <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex>-function is state discounted probability proof. Why is it not just linearity of expectation / Fubini? Inner series is clearly convergent? Probably related to policy stuff I need to get better at.</fr:li></fr:li></fr:ul>
+        <fr:li>An interesting idea that came up is to apply goal-conditioned RL to safe RL. Namely, we can discourage the visitation of unsafe states by considering <fr:tex
+display="inline"><![CDATA[Q(s, a, \text {unsafe})]]></fr:tex></fr:li>
+        <fr:ul><fr:li>Take <fr:tex
+display="inline"><![CDATA[\pi  \in  \arg \max _{\pi } Q(s, \pi (s), g) - \lambda (\delta ) Q(s, \pi (s), \text {obstacle})]]></fr:tex>, or</fr:li>
+            <fr:li>take <fr:tex
+display="inline"><![CDATA[\pi  \in  \arg \max _{\pi } Q(s, \pi (s), g)]]></fr:tex>, such that <fr:tex
+display="inline"><![CDATA[Q(s, \pi (s), \text {obstacle}) < \epsilon ]]></fr:tex>.</fr:li></fr:ul></fr:ul></fr:p>
+<fr:p><fr:strong>Ghost in the shell:</fr:strong> New ideas have arisen to turn this course project into a research project.
+<fr:ul><fr:li>Professors introduce the concept of "phase detection" from microarchitecture.</fr:li>
+    <fr:li>It seems that this area is concerned with detecting how inputs may influence things like hot paths and detecting when this is going to occur.</fr:li>
+    <fr:li>These methods all seems to choose metrics and algorithms for these metrics arbitrarily.</fr:li>
+    <fr:li>Can we pass a superset of all these metrics to an LLM and have it detect phase changes automatically?</fr:li></fr:ul></fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+
+  
+    <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2599</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:title
+text="Tomorrow Todo's">Tomorrow Todo's</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  <fr:ul><fr:li>I want to start <fr:link
+type="local"
+href="jiang2024.xml"
+addr="jiang2024"
+title="Reinforcement Learning: Theory and Algorithms">Reinforcement Learning: Theory and Algorithms</fr:link> tomorrow, taking a short break from very abstract / rigorous mathematics.</fr:li>
+    <fr:li>Focus tomorrow is getting profiling up and running.</fr:li>
+    <fr:ul><fr:li>By EOD, need to have edges of CFG filled with visitation frequencies.</fr:li></fr:ul>
+    <fr:li>If extra time, finish / work on <fr:link
+type="local"
+href="kak-0005.xml"
+addr="kak-0005"
+title="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:link> blog post with newfound knowledge.</fr:li></fr:ul>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

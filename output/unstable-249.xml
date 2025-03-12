@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3747</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:title
+text="11/18/2024 › Tomorrow Todo's"><fr:link
+type="local"
+href="log-0005.xml"
+addr="log-0005"
+title="11/18/2024">11/18/2024</fr:link> › Tomorrow Todo's</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  <fr:ul><fr:li>I have a plethora of meetings tomorrow, so I may not get too much done.</fr:li>
+    <fr:li>For research,</fr:li>
+    <fr:ul><fr:li><fr:strong>CRL stuff:</fr:strong> Meeting with my advisor tomorrow (scary-ish). Will hopefully have next steps after that.</fr:li>
+      <fr:li><fr:strong>Compilers stuff:</fr:strong> High-priority after my meeting. Need to figure out how to get branch counts. Even if super naive (no more CPython rabbit holes).</fr:li>
+      <fr:li><fr:strong>LLMs stuff:</fr:strong> Talk to group mates. Who knows where this might go.</fr:li></fr:ul>
+    <fr:li>I have added another thing to the reading list: <fr:link
+type="external"
+href="http://www.yann-ollivier.org/rech/publs/allpolicies.pdf">Toutati et al. 2021</fr:link>. This seems to be what I was looking for. A unification of all of the successor-representation-like algorithms that have been floating around my space.</fr:li>
+    <fr:li>Game-time decision whether I panic prepare stuff for my meeting / presentation, or start the probability measures section of my self-study. We shall see...</fr:li></fr:ul>
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>3749</fr:anchor><fr:addr
+type="user">log-0005</fr:addr><fr:route>log-0005.xml</fr:route><fr:title
+text="11/18/2024">11/18/2024</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="author">false</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Today we kind of got back on track.</fr:p>
+  
+    <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2585</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:title
+text="Daily Summary">Daily Summary</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+    <fr:strong>Contrastive RL:</fr:strong> As a way to avoid struggling with mujoco, I re-immersed myself in the relevant literature. I had a few takeaways:
+    <fr:ul><fr:li>I took a look back at the <fr:link
+type="local"
+href="mcleod2022.xml"
+addr="mcleod2022"
+title="Continual Auxiliary Task Learning">Continual Auxiliary Task Learning</fr:link> paper. I still really want to implement a system that puts everything together. Namely,</fr:li>
+      <fr:ul><fr:li>In this paper, they do not learn the cumulants that they use to compute the successor features.</fr:li>
+          <fr:li>Also, is a continual optimizer enough for non-stationary MDPs when learning cumulants?</fr:li></fr:ul>
+        <fr:li>Regarding implementation details for the Contrastive RL stuff. It seems the first priority should actually be implementing the hierarchical policy.</fr:li>
+        <fr:ul><fr:li>Currently, the repo is set up to randomly select goals and see how well the goal-conditioned policy can reach them. This is basically the extent of experimentation needed without the hierarchical policy.</fr:li></fr:ul>
+      <fr:li>I did come across an alternative successor-feature like apprach that I want to take a closer look at: the Forward-Backward representation <fr:link
+type="external"
+href="https://openreview.net/pdf?id=MYEap_OcQI">Toutati et al. 2023</fr:link>, <fr:link
+type="external"
+href="http://www.yann-ollivier.org/rech/publs/allpolicies.pdf">Toutati et al. 2021</fr:link>, <fr:link
+type="external"
+href="https://arxiv.org/pdf/2101.07123">Blier et al. 2021</fr:link>. Initial impressions:</fr:li>
+      <fr:ul><fr:li>Seems to be learned in a very similar manner to the successor feature stuff.</fr:li>
+          <fr:li>Re-parametrization avoids converging to trivial 0 solution.</fr:li>
+          <fr:li>Experimentally, seems way better than contrastive (at least for zero shot RL).</fr:li></fr:ul></fr:ul>
+<fr:strong>Weak-to-strong Generalization:</fr:strong> I finished up my slides for our presentation tomorrow.
+<fr:ul><fr:li>I have sufficiently confused myself on what weak-to-strong generalization even means. Is it</fr:li>
+    <fr:ol><fr:li>Correctly answering things that the weak model got incorrect? or</fr:li>
+        <fr:li>Generalizing correct answers on easier tasks to harder tasks?</fr:li></fr:ol>
+      <fr:li>The former case seems to be the hot topic right now, but I think the second one might be what we actually care about?</fr:li>
+      <fr:li>Maybe think about how to formulate this mathematically.</fr:li></fr:ul>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+
+  
+    <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>2587</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:title
+text="Tomorrow Todo's">Tomorrow Todo's</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  <fr:ul><fr:li>I have a plethora of meetings tomorrow, so I may not get too much done.</fr:li>
+    <fr:li>For research,</fr:li>
+    <fr:ul><fr:li><fr:strong>CRL stuff:</fr:strong> Meeting with my advisor tomorrow (scary-ish). Will hopefully have next steps after that.</fr:li>
+      <fr:li><fr:strong>Compilers stuff:</fr:strong> High-priority after my meeting. Need to figure out how to get branch counts. Even if super naive (no more CPython rabbit holes).</fr:li>
+      <fr:li><fr:strong>LLMs stuff:</fr:strong> Talk to group mates. Who knows where this might go.</fr:li></fr:ul>
+    <fr:li>I have added another thing to the reading list: <fr:link
+type="external"
+href="http://www.yann-ollivier.org/rech/publs/allpolicies.pdf">Toutati et al. 2021</fr:link>. This seems to be what I was looking for. A unification of all of the successor-representation-like algorithms that have been floating around my space.</fr:li>
+    <fr:li>Game-time decision whether I panic prepare stuff for my meeting / presentation, or start the probability measures section of my self-study. We shall see...</fr:li></fr:ul>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
